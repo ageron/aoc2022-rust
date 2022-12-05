@@ -1,5 +1,5 @@
-use itertools::Itertools;
 use super::utils::parse_int_vecs;
+use itertools::Itertools;
 
 pub fn move_crates(stacks: &mut [Vec<u8>], moves: &[Vec<i64>], one_by_one: bool) -> String {
     for mv in moves {
