@@ -1,6 +1,6 @@
-use super::utils::parse_int_vecs;
 use itertools::Itertools;
 use std::ops::RangeInclusive;
+use super::utils::parse_int_vecs;
 
 fn contains(range1: &RangeInclusive<i64>, range2: &RangeInclusive<i64>) -> bool {
     range1.start() <= range2.start() && range1.end() >= range2.end()
