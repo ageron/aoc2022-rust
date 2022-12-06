@@ -16,7 +16,7 @@ cd /path/to/this/repository
 python get_data.py 2022 {day}
 ```
 
-The first time you run this tool, it will ask you to login to AoC in your browser, and save your session cookie into a `.session` file in the current directory.
+The script requires the `requests` and `pytz` libraries, which you can install using `pip`. The first time you run this script, it will ask you to login to AoC in your browser, and save your session cookie into a `.session` file in the current directory.
 
 Have fun!
 
