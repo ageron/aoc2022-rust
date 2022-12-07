@@ -18,7 +18,7 @@ fn elapsed_since(start_time: &Instant) -> String {
 fn main() {
     let args: Vec<String> = env::args().collect();
     let days: Vec<_> = match args.len() {
-        1 => (1..=6).collect(),
+        1 => (1..=7).collect(),
         _ => args.iter().skip(1).map(|d| d.parse().unwrap()).collect(),
     };
     let global_start_time = Instant::now();
@@ -36,6 +36,7 @@ fn main() {
                 4 => aoc2022::day04::run,
                 5 => aoc2022::day05::run,
                 6 => aoc2022::day06::run,
+                7 => aoc2022::day07::run,
                 _ => unreachable!(),
             };
             day_func(input);
