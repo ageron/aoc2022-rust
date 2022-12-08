@@ -26,7 +26,7 @@ fn total_dir_size(
 pub fn run(input: &str) {
     let commands = input.lines().collect_vec();
     let mut directory_contents: HashMap<Vec<String>, DirectoryContent> = HashMap::new();
-    let mut current_path: Vec<String> = vec![];  // default to root
+    let mut current_path: Vec<String> = vec![]; // default to root
     let mut index = 0;
     while index < commands.len() {
         let command = commands[index];
@@ -65,7 +65,8 @@ pub fn run(input: &str) {
                     },
                 );
             }
-            _ => {  // $ cd {subdirectory name}
+            _ => {
+                // $ cd {subdirectory name}
                 let subdir_name = command.split(' ').last().unwrap().to_string();
                 current_path.push(subdir_name);
                 index += 1;
