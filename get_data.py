@@ -6,6 +6,11 @@ from pytz import timezone
 from time import sleep
 from pathlib import Path
 
+# Eric Wastl, the author of Advent-of-Code, asked that if you're automatically
+# querying adventofcode.com (as this script does), then you should include
+# contact details in the User-Agent field. So please replace my name with yours:
+NAME = "Aurélien Geron"
+
 def usage():
     print("Usage:")
     print(f"{sys.argv[0]} {{year}} {{day}}")
@@ -51,7 +56,8 @@ sleep(1) # just to be safe
 
 url = f"https://adventofcode.com/{year}/day/{day}/input"
 cookies = {"session": open(".session").read().strip()}
-request = requests.get(url, cookies=cookies)
+headers = {"User-Agent": NAME}
+request = requests.get(url, cookies=cookies, headers=headers)
 if request.status_code != 200:
     print(f"HTTP Error {request.status_code}")
     print(request.text)
