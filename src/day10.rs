@@ -1,5 +1,8 @@
 fn total_signal_strength(x_values: &[i32]) -> i32 {
-    (20..=220).step_by(40).map(|cycle| cycle as i32 * x_values[cycle - 1]).sum()
+    (20..=220)
+        .step_by(40)
+        .map(|cycle| cycle as i32 * x_values[cycle - 1])
+        .sum()
 }
 
 fn render_image(x_values: &[i32]) {
