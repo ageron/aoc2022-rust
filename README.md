@@ -42,6 +42,6 @@ The script requires the `requests` and `pytz` libraries, which you can install l
 python -m pip install --user requests pytz
 ```
 
-The first time you run `get_data.py`, you will be asked to login to AoC in your browser, [find your session cookie](https://github.com/wimglenn/advent-of-code-wim/issues/1), and save it into a `.session` file in the current directory. Here's one way to find it.
+The first time you run `get_data.py`, you will be asked to login to AoC in your browser, [find your session cookie](https://github.com/wimglenn/advent-of-code-wim/issues/1), and save it into a `.session` file in the current directory.
 
 Have fun!
