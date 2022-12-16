@@ -97,6 +97,7 @@ fn count_impossible_locations_in_row(sensors: &[Sensor], y: i64) -> i64 {
 /// Anyway, should this happen, it's easy enough to also check for the
 /// intersection between all diagonal lines and the borders. It's just a bit
 /// boring, so I didn't bother.
+/// In the end, this algorithm now runs in 220µs. That's about 6000x faster! 😃
 fn find_tuning_frequency(sensors: &[Sensor]) -> i64 {
     let mut sw_offsets = HashSet::new();
     let mut nw_offsets = HashSet::new();
