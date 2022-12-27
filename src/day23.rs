@@ -1,5 +1,5 @@
+use hashbrown::{HashMap, HashSet};
 use itertools::Itertools;
-use std::collections::{HashMap, HashSet};
 
 fn simulate_round(
     positions: &HashSet<(i32, i32)>,

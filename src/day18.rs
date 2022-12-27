@@ -1,5 +1,5 @@
+use hashbrown::HashSet;
 use itertools::Itertools;
-use std::collections::HashSet;
 
 fn is_neighbor(droplet1: &[i64], droplet2: &[i64]) -> bool {
     let mut distance = 0;

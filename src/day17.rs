@@ -1,6 +1,6 @@
+use hashbrown::HashMap;
 use itertools::Itertools;
 use std::cmp::max;
-use std::collections::HashMap;
 
 const WIDTH: usize = 7;
 const MAX_HEIGHT: usize = 10_000;

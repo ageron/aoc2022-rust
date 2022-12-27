@@ -1,5 +1,5 @@
+use hashbrown::HashSet;
 use itertools::Itertools;
-use std::collections::HashSet;
 //6311
 fn simulate(moves: &[(u8, i32)], num_knots: usize) -> usize {
     let mut rope: Vec<[i32; 2]> = vec![[0, 0]; num_knots];

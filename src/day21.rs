@@ -1,6 +1,6 @@
+use hashbrown::HashMap;
 use itertools::Itertools;
 use num::{Rational64, Zero};
-use std::collections::HashMap;
 
 #[derive(Debug, Clone)]
 enum MonkeyBusiness {

@@ -1,5 +1,5 @@
+use hashbrown::HashSet;
 use itertools::Itertools;
-use std::collections::HashSet;
 
 type Cave = HashSet<(i32, i32)>;
 

@@ -23,10 +23,10 @@ fn main() {
     };
     let global_start_time = Instant::now();
     for day in &days {
-        let start_time = Instant::now();
         println!("Day {}:", day);
         let path = format!("./data/day{:02}.txt", day);
         let input = fs::read_to_string(&path);
+        let start_time = Instant::now();
         if let Ok(input) = input {
             let input = input.trim_end();
             let day_func = match day {

@@ -1,7 +1,7 @@
+use hashbrown::HashMap;
 use itertools::Itertools;
 use regex::Regex;
 use std::cmp::{max, min};
-use std::collections::HashMap;
 
 #[derive(Debug, Clone)]
 struct Valve {

@@ -1,5 +1,5 @@
+use hashbrown::HashSet;
 use itertools::Itertools;
-use std::collections::HashSet;
 
 fn end_index_of_window_without_duplicates(input: &[u8], length: usize) -> usize {
     input

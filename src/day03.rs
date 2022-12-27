@@ -1,5 +1,5 @@
+use hashbrown::HashSet;
 use itertools::Itertools;
-use std::collections::HashSet;
 
 fn priority(item: u8) -> u32 {
     match item {

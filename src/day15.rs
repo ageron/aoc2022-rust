@@ -1,4 +1,4 @@
-use std::collections::HashSet;
+use hashbrown::HashSet;
 
 use super::utils::parse_int_vecs;
 use itertools::Itertools;

@@ -1,5 +1,5 @@
+use hashbrown::HashMap;
 use itertools::Itertools;
-use std::collections::HashMap;
 
 struct DirectoryContent {
     total_file_sizes: u64,
