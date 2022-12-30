@@ -5,7 +5,7 @@ If you've never heard of Advent of Code, you're missing out. Check it out now at
 
 I mostly do AoC puzzles for fun, generally coding in Python, but I've also found that it's a great way to get some experience with other programming languages, such as Julia or Rust.
 
-In this repository, I plan to solve all [AoC 2022](https://adventofcode.com/2022) puzzles using Rust.
+This repository contains all my solutions to the [AoC 2022](https://adventofcode.com/2022) puzzles using Rust.
 
 As I'm still learning Rust, the code may not always be as simple or idiomatic as it could be. If you have suggestions for things I could improve, please don't hesitate to file an issue or submit a PR. Thanks!
 
@@ -19,6 +19,8 @@ git clone https://github.com/ageron/aoc2022-rust
 cd aoc2022-rust
 cargo run --release
 ```
+
+On my MacBook, this runs in about 1.7 seconds.
 
 You can specify days to run if you want, for example this will run days 2, 4, and 6:
 
@@ -45,3 +47,4 @@ python -m pip install --user requests pytz
 The first time you run `get_data.py`, you will be asked to login to AoC in your browser, [find your session cookie](https://github.com/wimglenn/advent-of-code-wim/issues/1), and save it into a `.session` file in the current directory.
 
 Have fun!
+
